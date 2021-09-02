@@ -145,8 +145,8 @@
 
 /*********************************/
 
-// arr = ["alpha","bravo","charlie","delta"];
-// console.log(arr[arr.length-1]);
+testArr = ["alpha","bravo","charlie","delta"];
+console.log(testArr[testArr.length-1]);
 
 
 
@@ -166,30 +166,30 @@
 // console.log(struc.level1.level2.param2);
 
 
-rechner(25,20,"+");
-rechner(25,20,"-");
+// rechner(25,20,"+");
+// rechner(25,20,"-");
 
-function rechner(zahl1, zahl2, operator) {
-    let ergebnis;
-    switch (operator) {
-        case "+":
-            ergebnis = summe(zahl1, zahl2);
-            break;
-        case "-":
-            ergebnis = differenz(zahl1, zahl2);
-            break;
-        default:
-            ergebnis = "etwas ging schief";
-    }
-    console.log("Das Ergebnis lautet: " + ergebnis);
-}
+// function rechner(zahl1, zahl2, operator) {
+//     let ergebnis;
+//     switch (operator) {
+//         case "+":
+//             ergebnis = summe(zahl1, zahl2);
+//             break;
+//         case "-":
+//             ergebnis = differenz(zahl1, zahl2);
+//             break;
+//         default:
+//             ergebnis = "etwas ging schief";
+//     }
+//     console.log("Das Ergebnis lautet: " + ergebnis);
+// }
 
-function summe(z1, z2) {
-    return z1 + z2;
-}
+// function summe(z1, z2) {
+//     return z1 + z2;
+// }
 
-function differenz(z1, z2) {
-    return z1 - z2;
-}
+// function differenz(z1, z2) {
+//     return z1 - z2;
+// }
 
 
