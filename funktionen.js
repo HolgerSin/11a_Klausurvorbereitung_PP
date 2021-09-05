@@ -1,3 +1,5 @@
+"use strict";
+
 /* DATENSTRUKTUREN */
 
 /* Primitives */
@@ -145,7 +147,7 @@
 
 /*********************************/
 
-testArr = ["alpha","bravo","charlie","delta"];
+let testArr = ["alpha","bravo","charlie","delta"];
 console.log(testArr[testArr.length-1]);
 
 
