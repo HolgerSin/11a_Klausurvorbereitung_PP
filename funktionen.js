@@ -147,8 +147,9 @@
 
 /*********************************/
 
-let testArr = ["alpha","bravo","charlie","delta"];
-console.log(testArr[testArr.length-1]);
+// let testArr = ["alpha","bravo","charlie","delta"];
+// let arr = [false, true, true, true];
+// console.log(arr[0]);
 
 
 
@@ -164,31 +165,54 @@ console.log(testArr[testArr.length-1]);
 //     }
 // };
 
+
 // console.log(struc.level1.level2.param1);
 // console.log(struc.level1.level2.param2);
 
-
-// rechner(25,20,"+");
-// rechner(25,20,"-");
-
-// function rechner(zahl1, zahl2, operator) {
-//     let ergebnis;
-//     switch (operator) {
-//         case "+":
-//             ergebnis = summe(zahl1, zahl2);
-//             break;
-//         case "-":
-//             ergebnis = differenz(zahl1, zahl2);
-//             break;
-//         default:
-//             ergebnis = "etwas ging schief";
+// let obj =
+// {
+//     level1:
+//     {
+//         param1: 12,
+//         level2:
+//         {
+//             param2: 24
+//         }
 //     }
-//     console.log("Das Ergebnis lautet: " + ergebnis);
-// }
+// };
 
-// function summe(z1, z2) {
-//     return z1 + z2;
-// }
+// console.log(obj.level1.param1);
+// console.log(obj.level1.level2.param2);
+
+
+rechner(25,20,"+");
+rechner(5,12,"*");
+rechner(5,12,"blabla");
+
+function rechner(zahl1, zahl2, operator) {
+    let ergebnis;
+    switch (operator) {
+        case "+":
+            ergebnis = summe(zahl1, zahl2);
+            break;
+        case "*":
+            ergebnis = produkt(zahl1, zahl2);
+            break;
+        default:
+            ergebnis = "etwas ging schief";
+    }
+    console.log("Das Ergebnis lautet: " + ergebnis);
+}
+
+function summe(z1, z2) {
+    return z1 + z2;
+}
+
+function produkt(z1, z2) {
+    return z1 * z2;
+}
+
+
 
 // function differenz(z1, z2) {
 //     return z1 - z2;
